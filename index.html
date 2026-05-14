@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GemStore ID - Top Up Gem Semua Game Murah & Cepat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #7c3aed;
+            --secondary: #ec4899;
+            --accent: #fbbf24;
+            --success: #10b981;
+            --dark: #0f172a;
+            --darker: #0a0e27;
+            --light: #f1f5f9;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--darker) 0%, #1e1b4b 50%, var(--dark) 100%);
+            color: var(--light);
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* Animasi background */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes glow {
+            0%, 100% { text-shadow: 0 0 10px rgba(124, 58, 237, 0.5); }
+            50% { text-shadow: 0 0 20px rgba(124, 58, 237, 1); }
+        }
+
+        @keyframes sparkle {
+            0% { opacity: 0; transform: scale(0); }
+            50% { opacity: 1; }
+            100% { opacity: 0; transform: scale(1); }
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ============ HEADER ============ */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(124, 58, 237, 0.2);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'Fredoka One', sans-serif;
+            font-size: 1.5rem;
+            background: linear-gradient(135deg, #fbbf24, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        .logo span {
+            font-size: 2rem;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        .btn-login {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .btn-login:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(124, 58, 237, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+
+            header {
+                padding: 0.5rem 0;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+            }
+
+            .logo span {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* ============ MAIN CONTAINER ============ */
+        main {
+            margin-top: 80px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        /* ============ HERO SECTION ============ */
+        .hero {
+            position: relative;
+            padding: 4rem 0;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: 0;
+            width: 100%;
+            height: 200%;
+            background: radial-gradient(circle at 20% 50%, rgba(124, 58, 237, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            animation: slideInUp 0.8s ease-out;
+        }
+
+        .hero h1 {
+            font-family: 'Fredoka One', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #fbbf24, #ec4899, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(124, 58, 237, 0.5);
+        }
+
+        .btn-secondary {
+            background: rgba(124, 58, 237, 0.2);
+            color: var(--accent);
+            border: 2px solid var(--accent);
+        }
+
+        .btn-secondary:hover {
+            background: var(--accent);
+            color: var(--darker);
+        }
+
+        .hero-gem {
+            font-size: 5rem;
+            animation: float 3s ease-in-out infinite;
+            margin: 2rem 0;
+        }
+
+        .sparkles {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .sparkle {
+            font-size: 1.5rem;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .sparkle:nth-child(2) { animation-delay: 0.2s; }
+        .sparkle:nth-child(3) { animation-delay: 0.4s; }
+        .sparkle:nth-child(4) { animation-delay: 0.6s; }
+        .sparkle:nth-child(5) { animation-delay: 0.8s; }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 2rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero-gem {
+                font-size: 3rem;
+            }
+        }
+
+        /* ============ STATS SECTION ============ */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 2rem;
+            background: rgba(124, 58, 237, 0.1);
+            border: 1px solid rgba(124, 58, 237, 0.3);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover {
+            background: rgba(124, 58, 237, 0.2);
+            border-color: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-family: 'Fredoka One', sans-serif;
+            font-size: 2.5rem;
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            color: #cbd5e1;
+            margin-top: 0.5rem;
+        }
+
+        /* ============ GAMES SECTION ============ */
+        .games-section {
+            padding: 4rem 0;
+            animation: slideInUp 0.8s ease-out 0.2s both;
+        }
+
+        .section-title {
+            font-family: 'Fredoka One', sans-serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #cbd5e1;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .game-card {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(236, 72, 153, 0.1));
+            border: 2px solid rgba(124, 58, 237, 0.3);
+            border-radius: 15px;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: slideInUp 0.6s ease-out backwards;
+            position: relative;
+        }
+
+        .game-card:nth-child(1) { animation-delay: 0.1s; }
+        .game-card:nth-child(2) { animation-delay: 0.2s; }
+        .game-card:nth-child(3) { animation-delay: 0.3s; }
+        .game-card:nth-child(4) { animation-delay: 0.4s; }
+        .game-card:nth-child(5) { animation-delay: 0.5s; }
+        .game-card:nth-child(6) { animation-delay: 0.6s; }
+        .game-card:nth-child(n+7) { animation-delay: 0.7s; }
+
+        .game-card:hover {
+            border-color: var(--accent);
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.4), rgba(236, 72, 153, 0.2));
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(124, 58, 237, 0.3);
+        }
+
+        .game-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .game-card:hover .game-icon {
+            animation: spin 0.6s ease-in-out;
+        }
+
+        .game-name {
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        .game-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            color: var(--darker);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .game-card-btn {
+            width: 100%;
+            padding: 0.7rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9rem;
+        }
+
+        .game-card-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .games-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+                gap: 1rem;
+            }
+
+            .game-icon {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* ============ HOW TO SECTION ============ */
+        .howto-section {
+            padding: 4rem 0;
+            animation: slideInUp 0.8s ease-out 0.3s both;
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .step-card {
+            background: rgba(124, 58, 237, 0.1);
+            border: 2px solid rgba(124, 58, 237, 0.3);
+            border-radius: 15px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            position: relative;
+            transition: all 0.3s ease;
+            animation: slideInUp 0.6s ease-out backwards;
+        }
+
+        .step-card:nth-child(1) { animation-delay: 0.1s; }
+        .step-card:nth-child(2) { animation-delay: 0.2s; }
+        .step-card:nth-child(3) { animation-delay: 0.3s; }
+        .step-card:nth-child(4) { animation-delay: 0.4s; }
+
+        .step-card:hover {
+            background: rgba(124, 58, 237, 0.2);
+            border-color: var(--accent);
+            transform: translateY(-10px);
+        }
+
+        .step-number {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Fredoka One', sans-serif;
+            font-size: 1.5rem;
+            color: var(--darker);
+            font-weight: 700;
+            box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
+        }
+
+        .step-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .step-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        .step-desc {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* ============ FEATURES SECTION ============ */
+        .features-section {
+            padding: 4rem 0;
+            animation: slideInUp 0.8s ease-out 0.4s both;
+        }
+
+        .features-box {
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(236, 72, 153, 0.1));
+            border: 2px solid rgba(124, 58, 237, 0.3);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            transition: all 0.3s ease;
+            animation: slideInUp 0.6s ease-out backwards;
+        }
+
+        .feature-item:nth-child(1) { animation-delay: 0.1s; }
+        .feature-item:nth-child(2) { animation-delay: 0.2s; }
+        .feature-item:nth-child(3) { animation-delay: 0.3s; }
+        .feature-item:nth-child(4) { animation-delay: 0.4s; }
+
+        .feature-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .feature-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        .feature-desc {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* ============ TESTIMONIAL SECTION ============ */
+        .testimonial-section {
+            padding: 4rem 0;
+            animation: slideInUp 0.8s ease-out 0.5s both;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: rgba(124, 58, 237, 0.1);
+            border: 2px solid rgba(124, 58, 237, 0.3);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            animation: slideInUp 0.6s ease-out backwards;
+        }
+
+        .testimonial-card:nth-child(1) { animation-delay: 0.1s; }
+        .testimonial-card:nth-child(2) { animation-delay: 0.2s; }
+        .testimonial-card:nth-child(3) { animation-delay: 0.3s; }
+
+        .testimonial-card:hover {
+            background: rgba(124, 58, 237, 0.2);
+            border-color: var(--accent);
+            transform: translateY(-10px);
+        }
+
+        .testimonial-avatar {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-name {
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0.3rem;
+        }
+
+        .testimonial-game {
+            font-size: 0.85rem;
+            color: #cbd5e1;
+            margin-bottom: 0.8rem;
+        }
+
+        .testimonial-stars {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-text {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        /* ============ FAQ SECTION ============ */
+        .faq-section {
+            padding: 4rem 0;
+            animation: slideInUp 0.8s ease-out 0.6s both;
+        }
+
+        .faq-container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: rgba(124, 58, 237, 0.1);
+            border: 2px solid rgba(124, 58, 237, 0.3);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            animation: slideInUp 0.6s ease-out backwards;
+        }
+
+        .faq-item:nth-child(1) { animation-delay: 0.1s; }
+        .faq-item:nth-child(2) { animation-delay: 0.2s; }
+        .faq-item:nth-child(3) { animation-delay: 0.3s; }
+        .faq-item:nth-child(4) { animation-delay: 0.4s; }
+        .faq-item:nth-child(5) { animation-delay: 0.5s; }
+
+        .faq-question {
+            padding: 1.5rem;
+            background: rgba(124, 58, 237, 0.1);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            color: white;
+        }
+
+        .faq-question:hover {
+            background: rgba(124, 58, 237, 0.2);
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background: rgba(124, 58, 237, 0.05);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+        }
+
+        .faq-answer-text {
+            padding: 1.5rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        /* ============ FOOTER ============ */
+        footer {
+            background: rgba(0, 0, 0, 0.5);
+            border-top: 1px solid rgba(124, 58, 237, 0.2);
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
+            animation: slideInUp 0.8s ease-out 0.7s both;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            font-family: 'Fredoka One', sans-serif;
+            margin-bottom: 1rem;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .footer-section a {
+            display: block;
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin-bottom: 0;
+            transition: all 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(124, 58, 237, 0.2);
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* ============ MODAL TOP UP ============ */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: var(--dark);
+            border: 2px solid rgba(124, 58, 237, 0.3);
+            border-radius: 20px;
+            padding: 2rem;
+            max-width: 600px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            animation: slideInUp 0.3s ease-out;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .modal-close:hover {
+            transform: rotate(90deg);
+        }
+
+        .modal-title {
+            font-family: 'Fredoka One', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        .form-input,
+        .form-select {
+            width: 100%;
+            padding: 0.8rem;
+            background: rgba(124, 58, 237, 0.1);
+            border: 2px solid rgba(124, 58, 237, 0.3);
+            border-radius: 10px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus,
+        .form-select:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: rgba(124, 58, 237, 0.15);
+        }
+
+        .form-input::placeholder {
+            color: #64748b;
+        }
+
+        .nominal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 1rem;
+        }
+
+        .nominal-card {
+            background: rgba(124, 58, 237, 0.1);
+            border: 2px solid rgba(124, 58, 237, 0.3);
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nominal-card:hover {
+            border-color: var(--accent);
+            background: rgba(124, 58, 237, 0.2);
+        }
+
+        .nominal-card.selected {
+            border-color: var(--accent);
+            background: rgba(251, 191, 36, 0.2);
+            box-shadow: 0 0 20px rgba(251, 191, 36, 0.3);
+        }
+
+        .nominal-card.selected::after {
+            content: '✓';
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .nominal-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .nominal-amount {
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0.3rem;
+        }
+
+        .nominal-price {
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .nominal-badge {
+            position: absolute;
+            top: -8px;
+            left: 10px;
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            color: var(--darker);
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.65rem;
+            font-weight: 700;
+        }
+
+        .payment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 1rem;
+        }
+
+        .payment-option {
+            background: rgba(124, 58, 237, 0.1);
+            border: 2px solid rgba(124, 58, 237, 0.3);
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .payment-option:hover {
+            border-color: var(--accent);
+            background: rgba(124, 58, 237, 0.2);
+        }
+
+        .payment-option.selected {
+            border-color: var(--accent);
+            background: rgba(251, 191, 36, 0.2);
+            box-shadow: 0 0 15px rgba(251, 191, 36, 0.3);
+        }
+
+        .payment-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .payment-name {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: white;
+        }
+
+        .step-indicator {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+        }
+
+        .step-dot {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(124, 58, 237, 0.2);
+            border: 2px solid rgba(124, 58, 237, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #cbd5e1;
+            transition: all 0.3s ease;
+        }
+
+        .step-dot.active {
+            background: linear-gradient(135deg, var(--accent), var(--secondary));
+            border-color: var(--accent);
+            color: var(--darker);
+            transform: scale(1.1);
+        }
+
+        .step-dot.completed {
+            background: var(--success);
+            border-color: var(--success);
+            color: white;
+        }
+
+        .order-summary {
+            background: rgba(16, 185, 129, 0.1);
+            border: 2px solid rgba(16, 185, 129, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            color: #cbd5e1;
+        }
+
+        .summary-row:last-child {
+            margin-bottom: 0;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(124, 58, 237, 0.2);
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 1.1rem;
+        }
+
+        .step-content {
+            display: none;
+        }
+
+        .step-content.active {
+            display: block;
+            animation: slideInUp 0.3s ease-out;
+        }
+
+        .btn-full {
+            width: 100%;
+            padding: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        /* ============ SUCCESS MODAL ============ */
+        .success-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 3000;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .success-modal.active {
+            display: flex;
+        }
+
+        .success-content {
+            text-align: center;
+            animation: slideInUp 0.3s ease-out;
+        }
+
+        .success-icon {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        .success-title {
+            font-family: 'Fredoka One', sans-serif;
+            font-size: 2rem;
+            color: var(--success);
+            margin-bottom: 1rem;
+        }
+
+        .success-text {
+            color: #cbd5e1;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 400px;
+        }
+
+        /* ============ BOTTOM NAV (Mobile) ============ */
+        .bottom-nav {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(10, 14, 39, 0.95);
+            border-top: 1px solid rgba(124, 58, 237, 0.2);
+            backdrop-filter: blur(10px);
+            z-index: 999;
+            padding: 1rem 0;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                margin-bottom: 80px;
+            }
+
+            .bottom-nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .bottom-nav a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.3rem;
+                color: #cbd5e1;
+                text-decoration: none;
+                font-size: 0.75rem;
+                flex: 1;
+                transition: all 0.3s ease;
+            }
+
+            .bottom-nav a:hover,
+            .bottom-nav a.active {
+                color: var(--accent);
+            }
+
+            .bottom-nav-icon {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* ============ UTILITIES ============ */
+        .hide-mobile {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .hide-mobile {
+                display: none;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .section-subtitle {
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(124, 58, 237, 0.1);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(124, 58, 237, 0.5);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <span>💎</span>
+                <span>GemStore ID</span>
+            </div>
+            <nav>
+                <a href="#beranda">Beranda</a>
+                <a href="#games">Game</a>
+                <a href="#riwayat">Riwayat</a>
+                <a href="#kontak">Kontak</a>
+                <button class="btn-login">Masuk</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="beranda">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-gem">💎</div>
+                    <h1>Top Up Gem Semua Game<br>Murah & Cepat!</h1>
+                    <p>Mulai dari Rp 1.000 aja. Proses otomatis, langsung masuk!</p>
+                    <div class="sparkles">
+                        <span class="sparkle">✨</span>
+                        <span class="sparkle">⚡</span>
+                        <span class="sparkle">🎮</span>
+                        <span class="sparkle">💰</span>
+                        <span class="sparkle">✨</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="document.getElementById('games').scrollIntoView()">🎮 Mulai Top Up Sekarang</button>
+                        <a href="#kontak" class="btn btn-secondary">📋 Cek Pesanan</a>
+                    </div>
+
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Game Populer</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">Instan</div>
+                            <div class="stat-label">Proses Cepat</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Layanan Online</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Games Section -->
+        <section class="games-section" id="games">
+            <div class="container">
+                <h2 class="section-title">🎮 Pilih Game Favoritmu</h2>
+                <p class="section-subtitle">Tersedia berbagai game populer dengan harga termurah</p>
+                <div class="games-grid" id="gamesGrid">
+                    <!-- Akan diisi oleh JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- How To Section -->
+        <section class="howto-section">
+            <div class="container">
+                <h2 class="section-title">📖 Cara Top Up</h2>
+                <p class="section-subtitle">Hanya 4 langkah mudah untuk top up game favoritmu</p>
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">🎮</div>
+                        <div class="step-title">Pilih Game</div>
+                        <div class="step-desc">Pilih game yang ingin kamu top up dari daftar game tersedia</div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">💎</div>
+                        <div class="step-title">Pilih Nominal</div>
+                        <div class="step-desc">Pilih jumlah diamond, UC, atau item yang kamu butuhkan</div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">💳</div>
+                        <div class="step-title">Bayar</div>
+                        <div class="step-desc">Pilih metode pembayaran dan selesaikan pembayaran</div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">✅</div>
+                        <div class="step-title">Selesai</div>
+                        <div class="step-desc">Item akan langsung masuk ke akun game kamu secara otomatis</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <div class="features-box">
+                    <h2 class="section-title">⭐ Kenapa Pilih GemStore ID?</h2>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-title">Proses Instan</div>
+                            <div class="feature-desc">Item masuk ke akun game dalam hitungan detik setelah pembayaran</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">💰</div>
+                            <div class="feature-title">Harga Termurah</div>
+                            <div class="feature-desc">Dijamin harga paling murah dan terjangkau tanpa biaya admin</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🔒</div>
+                            <div class="feature-title">Aman & Terpercaya</div>
+                            <div class="feature-desc">Ribuan transaksi berhasil setiap hari dengan tingkat keberhasilan 99.9%</div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎧</div>
+                            <div class="feature-title">CS 24 Jam</div>
+                            <div class="feature-desc">Tim siap membantu menjawab pertanyaanmu kapan saja</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="testimonial-section">
+            <div class="container">
+                <h2 class="section-title">⭐ Testimoni Pelanggan</h2>
+                <p class="section-subtitle">Ribuan gamer telah puas berbelanja bersama kami</p>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">👨‍💻</div>
+                        <div class="testimonial-name">Ricky Gaming</div>
+                        <div class="testimonial-game">Mobile Legends</div>
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <div class="testimonial-text">"Cepat banget! Diamond masuk dalam 5 detik. Harga juga terjangkau, paling murah dari yang lain!"</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">👩‍🎮</div>
+                        <div class="testimonial-name">Sarah Gamer</div>
+                        <div class="testimonial-game">Genshin Impact</div>
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <div class="testimonial-text">"Pokoknya top-rated! Transaksi aman, gak perlu khawatir. Sering pakai buat top up primogem."</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-avatar">🧑‍💻</div>
+                        <div class="testimonial-name">Adi Pubg</div>
+                        <div class="testimonial-game">PUBG Mobile</div>
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <div class="testimonial-text">"Ini go-to app ku untuk top up UC. Mana lagi yang lebih murah dan cepat dari ini?"</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" id="kontak">
+            <div class="container">
+                <h2 class="section-title">❓ Pertanyaan Umum</h2>
+                <p class="section-subtitle">Jawaban untuk pertanyaan yang sering ditanyakan</p>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Berapa lama proses top up?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-text">Proses top up sangat cepat! Setelah pembayaran masuk, diamond atau item akan langsung masuk ke akun game Anda dalam waktu kurang dari 1 menit. Biasanya hanya butuh beberapa detik saja.</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Apakah aman tanpa password?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-text">100% aman! Kami tidak membutuhkan password akun game Anda. Sistem kami terhubung langsung dengan server game resmi, sehingga akun Anda tetap aman dari hacking atau pembajakan. Kami sudah dipercaya oleh jutaan pengguna.</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Metode pembayaran apa saja yang tersedia?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-text">Kami menyediakan berbagai metode pembayaran: QRIS (semua e-wallet), GoPay, OVO, Dana, ShopeePay, Transfer Bank (BCA, BNI, BRI, Mandiri), dan Alfamart/Indomaret. Pilih yang paling mudah untuk Anda!</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Bagaimana kalau diamond tidak masuk?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-text">Jika diamond tidak masuk setelah 1 jam, segera hubungi customer service kami melalui WhatsApp. Tim kami siap membantu dan menyelesaikan masalah Anda dengan cepat. Kami memberikan garansi uang kembali jika terjadi masalah.</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Apakah ada minimum dan maksimum pembelian?</span>
+                            <span class="faq-toggle">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-text">Minimum pembelian mulai dari Rp 1.000 saja! Tidak ada maksimum, Anda bisa membeli sesering yang Anda mau. Semakin sering membeli, semakin banyak bonus dan reward yang didapatkan.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>💎 GemStore ID</h3>
+                    <p style="color: #cbd5e1; margin-bottom: 1rem;">Top Up Gem Murah, Proses Cepat, Mulai Rp 1.000</p>
+                    <div class="social-icons">
+                        <a href="#" title="Instagram">📱</a>
+                        <a href="#" title="WhatsApp">💬</a>
+                        <a href="#" title="TikTok">🎵</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Link Penting</h3>
+                    <a href="#beranda">Beranda</a>
+                    <a href="#games">Pilih Game</a>
+                    <a href="#kontak">Kontak</a>
+                    <a href="#">Syarat & Ketentuan</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Layanan</h3>
+                    <a href="#">Kebijakan Privasi</a>
+                    <a href="#">Hubungi Kami</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Bantuan</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p style="color: #cbd5e1; margin-bottom: 0.5rem;">WhatsApp: +62 812-xxxx-xxxx</p>
+                    <p style="color: #cbd5e1; margin-bottom: 0.5rem;">Email: support@gemstore.id</p>
+                    <p style="color: #cbd5e1;">Tersedia 24/7 untuk melayani Anda</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GemStore ID. All rights reserved. | Terpercaya, Aman, dan Terjangkau</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Navigation (Mobile) -->
+    <div class="bottom-nav">
+        <a href="#beranda" class="active">
+            <span class="bottom-nav-icon">🏠</span>
+            <span>Beranda</span>
+        </a>
+        <a href="#games">
+            <span class="bottom-nav-icon">🎮</span>
+            <span>Game</span>
+        </a>
+        <a href="#riwayat">
+            <span class="bottom-nav-icon">📋</span>
+            <span>Riwayat</span>
+        </a>
+        <a href="#kontak">
+            <span class="bottom-nav-icon">📞</span>
+            <span>Kontak</span>
+        </a>
+    </div>
+
+    <!-- Top Up Modal -->
+    <div class="modal" id="topupModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeTopupModal()">✕</button>
+            <h2 class="modal-title" id="modalGameTitle">Top Up Game</h2>
+
+            <div class="step-indicator">
+                <div class="step-dot active" data-step="1">1</div>
+                <div class="step-dot" data-step="2">2</div>
+                <div class="step-dot" data-step="3">3</div>
+                <div class="step-dot" data-step="4">4</div>
+            </div>
+
+            <!-- Step 1: Input ID -->
+            <div class="step-content active" data-step="1">
+                <h3 style="color: white; margin-bottom: 1rem;">Masukkan ID Game Kamu</h3>
+                <div class="form-group">
+                    <label class="form-label">User ID / IGN</label>
+                    <input type="text" class="form-input" id="userID" placeholder="Masukkan User ID atau nama karakter" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Server / Zone</label>
+                    <select class="form-select" id="serverSelect">
+                        <option value="">Pilih Server</option>
+                        <option value="asia">Asia</option>
+                        <option value="europe">Europe</option>
+                        <option value="america">America</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary btn-full" onclick="goToStep(2)">Lanjut ke Step 2 ✓</button>
+            </div>
+
+            <!-- Step 2: Pilih Nominal -->
+            <div class="step-content" data-step="2">
+                <h3 style="color: white; margin-bottom: 1rem;">Pilih Nominal Gem</h3>
+                <div class="nominal-grid" id="nominalGrid">
+                    <!-- Akan diisi oleh JavaScript -->
+                </div>
+                <button class="btn btn-primary btn-full" onclick="goToStep(3)">Lanjut ke Step 3 ✓</button>
+                <button class="btn btn-secondary btn-full" onclick="goToStep(1)" style="background: transparent; margin-top: 0.5rem;">← Kembali</button>
+            </div>
+
+            <!-- Step 3: Pilih Metode Pembayaran -->
+            <div class="step-content" data-step="3">
+                <h3 style="color: white; margin-bottom: 1rem;">Pilih Metode Pembayaran</h3>
+                <div class="payment-grid" id="paymentGrid">
+                    <!-- Akan diisi oleh JavaScript -->
+                </div>
+                <button class="btn btn-primary btn-full" onclick="goToStep(4)">Lanjut ke Step 4 ✓</button>
+                <button class="btn btn-secondary btn-full" onclick="goToStep(2)" style="background: transparent; margin-top: 0.5rem;">← Kembali</button>
+            </div>
+
+            <!-- Step 4: Konfirmasi -->
+            <div class="step-content" data-step="4">
+                <h3 style="color: white; margin-bottom: 1rem;">Konfirmasi Pesanan</h3>
+                <div class="order-summary">
+                    <div class="summary-row">
+                        <span>Game:</span>
+                        <span id="summaryGame">-</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>User ID:</span>
+                        <span id="summaryID">-</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Nominal:</span>
+                        <span id="summaryNominal">-</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Metode:</span>
+                        <span id="summaryPayment">-</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Total Harga:</span>
+                        <span id="summaryPrice">-</span>
+                    </div>
+                </div>
+                <div style="background: rgba(251, 191, 36, 0.1); border: 2px solid rgba(251, 191, 36, 0.3); border-radius: 10px; padding: 1rem; margin-bottom: 1.5rem; color: var(--accent); text-align: center; font-weight: 700;">
+                    ⏱️ Selesaikan pembayaran dalam <span id="timer">15:00</span>
+                </div>
+                <button class="btn btn-primary btn-full" onclick="processPayment()">💳 Bayar Sekarang</button>
+                <button class="btn btn-secondary btn-full" onclick="goToStep(3)" style="background: transparent; margin-top: 0.5rem;">← Kembali</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="success-modal" id="successModal">
+        <div class="success-content">
+            <div class="success-icon">✅</div>
+            <h2 class="success-title">Pembayaran Berhasil!</h2>
+            <p class="success-text">Diamond sedang diproses dan akan masuk ke akun game kamu dalam hitungan detik. Terimakasih telah berbelanja di GemStore ID! 🎮💎</p>
+            <button class="btn btn-primary" onclick="closeSuccessModal()">Tutup & Kembali ke Beranda</button>
+        </div>
+    </div>
+
+    <script>
+        // Data Games
+        const games = [
+            { id: 1, name: 'Mobile Legends', icon: '⚔️', category: 'mobile' },
+            { id: 2, name: 'Free Fire', icon: '🔥', category: 'mobile' },
+            { id: 3, name: 'PUBG Mobile', icon: '🎯', category: 'mobile' },
+            { id: 4, name: 'Genshin Impact', icon: '🌟', category: 'pc' },
+            { id: 5, name: 'Honkai Star Rail', icon: '🚀', category: 'pc' },
+            { id: 6, name: 'Clash of Clans', icon: '🏰', category: 'mobile' },
+            { id: 7, name: 'Clash Royale', icon: '👑', category: 'mobile' },
+            { id: 8, name: 'Roblox', icon: '🎨', category: 'pc' },
+            { id: 9, name: 'Brawl Stars', icon: '⭐', category: 'mobile' },
+            { id: 10, name: 'Valorant', icon: '💫', category: 'pc' }
+        ];
+
+        // Data Nominal (contoh untuk semua game)
+        const nominals = [
+            { icon: '💎', amount: '5', currency: 'Diamond', price: 1000, badge: '' },
+            { icon: '💎💎', amount: '11', currency: 'Diamond', price: 2000, badge: '' },
+            { icon: '💎💎💎', amount: '28', currency: 'Diamond', price: 5000, badge: '' },
+            { icon: '⭐', amount: '56', currency: 'Diamond', price: 10000, badge: 'TERLARIS' },
+            { icon: '⭐⭐', amount: '115', currency: 'Diamond', price: 20000, badge: 'HEMAT' },
+            { icon: '👑', amount: '172', currency: 'Diamond', price: 30000, badge: '' },
+            { icon: '👑👑', amount: '257', currency: 'Diamond', price: 50000, badge: 'HEMAT' },
+            { icon: '🏆', amount: '514', currency: 'Diamond', price: 100000, badge: '' }
+        ];
+
+        // Data Pembayaran
+        const payments = [
+            { icon: '📱', name: 'QRIS' },
+            { icon: '🟢', name: 'GoPay' },
+            { icon: '🔵', name: 'OVO' },
+            { icon: '🟣', name: 'Dana' },
+            { icon: '📦', name: 'ShopeePay' },
+            { icon: '🏧', name: 'Transfer Bank' },
+            { icon: '🛍️', name: 'Alfamart' }
+        ];
+
+        // State
+        let currentGame = null;
+        let selectedNominal = null;
+        let selectedPayment = null;
+        let currentStep = 1;
+
+        // Initialize
+        function init() {
+            renderGames();
+            setupFAQ();
+            setupBottomNav();
+            setupNominals();
+            setupPayments();
+        }
+
+        // Render Games
+        function renderGames() {
+            const gamesGrid = document.getElementById('gamesGrid');
+            gamesGrid.innerHTML = games.map(game => `
+                <div class="game-card" onclick="openTopupModal(${game.id})">
+                    <div class="game-icon">${game.icon}</div>
+                    <div class="game-name">${game.name}</div>
+                    <div class="game-badge">${game.category === 'mobile' ? '📱 Mobile' : '💻 PC'}</div>
+                    <button class="game-card-btn">Top Up</button>
+                </div>
+            `).join('');
+        }
+
+        // Open Top Up Modal
+        function openTopupModal(gameId) {
+            currentGame = games.find(g => g.id === gameId);
+            currentStep = 1;
+            selectedNominal = null;
+            selectedPayment = null;
+
+            document.getElementById('modalGameTitle').textContent = `Top Up ${currentGame.name}`;
+            document.getElementById('userID').value = '';
+            document.getElementById('serverSelect').value = '';
+
+            goToStep(1);
+            document.getElementById('topupModal').classList.add('active');
+        }
+
+        // Close Top Up Modal
+        function closeTopupModal() {
+            document.getElementById('topupModal').classList.remove('active');
+        }
+
+        // Go to Step
+        function goToStep(step) {
+            if (step === 2 && !document.getElementById('userID').value) {
+                alert('Masukkan User ID terlebih dahulu!');
+                return;
+            }
+
+            if (step === 3 && !selectedNominal) {
+                alert('Pilih nominal gem terlebih dahulu!');
+                return;
+            }
+
+            if (step === 4 && !selectedPayment) {
+                alert('Pilih metode pembayaran terlebih dahulu!');
+                return;
+            }
+
+            currentStep = step;
+
+            // Update step content
+            document.querySelectorAll('.step-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.querySelector(`.step-content[data-step="${step}"]`).classList.add('active');
+
+            // Update step indicators
+            document.querySelectorAll('.step-dot').forEach((dot, idx) => {
+                if (idx + 1 < step) {
+                    dot.classList.add('completed');
+                    dot.classList.remove('active');
+                    dot.innerHTML = '✓';
+                } else if (idx + 1 === step) {
+                    dot.classList.add('active');
+                    dot.classList.remove('completed');
+                    dot.innerHTML = step;
+                } else {
+                    dot.classList.remove('active', 'completed');
+                    dot.innerHTML = idx + 1;
+                }
+            });
+
+            // Update summary
+            if (step === 4) {
+                updateSummary();
+                startTimer();
+            }
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Setup Nominals
+        function setupNominals() {
+            const nominalGrid = document.getElementById('nominalGrid');
+            nominalGrid.innerHTML = nominals.map((nom, idx) => `
+                <div class="nominal-card" onclick="selectNominal(${idx})">
+                    ${nom.badge ? `<div class="nominal-badge">${nom.badge}</div>` : ''}
+                    <div class="nominal-icon">${nom.icon}</div>
+                    <div class="nominal-amount">${nom.amount}</div>
+                    <div class="nominal-price">Rp ${nom.price.toLocaleString('id-ID')}</div>
+                </div>
+            `).join('');
+        }
+
+        // Select Nominal
+        function selectNominal(idx) {
+            document.querySelectorAll('.nominal-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            document.querySelectorAll('.nominal-card')[idx].classList.add('selected');
+            selectedNominal = nominals[idx];
+        }
+
+        // Setup Payments
+        function setupPayments() {
+            const paymentGrid = document.getElementById('paymentGrid');
+            paymentGrid.innerHTML = payments.map((pay, idx) => `
+                <div class="payment-option" onclick="selectPayment(${idx})">
+                    <div class="payment-icon">${pay.icon}</div>
+                    <div class="payment-name">${pay.name}</div>
+                </div>
+            `).join('');
+        }
+
+        // Select Payment
+        function selectPayment(idx) {
+            document.querySelectorAll('.payment-option').forEach(option => {
+                option.classList.remove('selected');
+            });
+            document.querySelectorAll('.payment-option')[idx].classList.add('selected');
+            selectedPayment = payments[idx];
+        }
+
+        // Update Summary
+        function updateSummary() {
+            document.getElementById('summaryGame').textContent = currentGame.name;
+            document.getElementById('summaryID').textContent = document.getElementById('userID').value;
+            document.getElementById('summaryNominal').textContent = `${selectedNominal.amount} ${selectedNominal.currency}`;
+            document.getElementById('summaryPayment').textContent = selectedPayment.name;
+            document.getElementById('summaryPrice').textContent = `Rp ${selectedNominal.price.toLocaleString('id-ID')}`;
+        }
+
+        // Start Timer
+        function startTimer() {
+            let seconds = 900; // 15 minutes
+            const timerDisplay = document.getElementById('timer');
+
+            const countdown = setInterval(() => {
+                seconds--;
+                const minutes = Math.floor(seconds / 60);
+                const secs = seconds % 60;
+                timerDisplay.textContent = `${minutes}:${secs.toString().padStart(2, '0')}`;
+
+                if (seconds <= 0) {
+                    clearInterval(countdown);
+                    alert('Waktu pembayaran telah habis. Silahkan buat pesanan baru.');
+                    closeTopupModal();
+                }
+            }, 1000);
+        }
+
+        // Process Payment
+        function processPayment() {
+            document.getElementById('topupModal').classList.remove('active');
+            document.getElementById('successModal').classList.add('active');
+        }
+
+        // Close Success Modal
+        function closeSuccessModal() {
+            document.getElementById('successModal').classList.remove('active');
+            document.getElementById('topupModal').classList.remove('active');
+        }
+
+        // Setup FAQ
+        function setupFAQ() {
+            document.querySelectorAll('.faq-question').forEach(question => {
+                question.addEventListener('click', function() {
+                    const faqItem = this.closest('.faq-item');
+                    document.querySelectorAll('.faq-item').forEach(item => {
+                        if (item !== faqItem) item.classList.remove('active');
+                    });
+                    faqItem.classList.toggle('active');
+                });
+            });
+        }
+
+        // Setup Bottom Nav
+        function setupBottomNav() {
+            document.querySelectorAll('.bottom-nav a').forEach(link => {
+                link.addEventListener('click', function() {
+                    document.querySelectorAll('.bottom-nav a').forEach(a => a.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        }
+
+        // Initialize on load
+        window.addEventListener('load', init);
+    </script>
+</body>
+</html>
