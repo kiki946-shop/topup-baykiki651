@@ -1,0 +1,39 @@
+@import "tailwindcss" source("../");
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  min-height: 100vh;
+  color: #fff;
+}
+
+code {
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.gem-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gem-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(139, 92, 246, 0.3);
+}
+
+.buy-btn {
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  transition: opacity 0.2s;
+}
+
+.buy-btn:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.hero-glow {
+  text-shadow: 0 0 40px rgba(167, 139, 250, 0.8);
+}
